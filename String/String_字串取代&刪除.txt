@@ -1,0 +1,28 @@
+
+//刪除最後
+String temp="hahahaha";
+String newString=temp.substring(0,temp.length()-1);
+
+//刪除最後
+class s036
+{
+	public static void main(String args[])
+   	{
+ 		String str1="abcd-efgh-ijklmn";
+		int n=3;
+ 		System.out.println("字串："+str1);
+    		
+    		System.out.println(" 前方 "+n+" 個字第"+str1.substring(0,n));
+    		///
+    		System.out.println(" 後方 "+n+" 個字第"+str1.substring(str1.length()-n));
+
+    		String str2 = str1.replace('-',',');
+     		String str3 = str1.replaceAll("[a-z]","0");
+ 		String str4 = str1.replaceFirst("[a-z]","0");
+ 
+ 		System.out.println("取代："+str2);
+ 		System.out.println("取代replaceAll："+str3);
+ 		System.out.println("取代replaceFirst："+str4);
+ 
+    } //end of main
+}  // end of class

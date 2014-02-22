@@ -1,0 +1,8 @@
+	
+
+	private static void showMsg(String s) {
+	    							
+		String time = new SimpleDateFormat("HH:mm:ss").format(new Date());   
+		System.out.println("["+time+"]"+s);
+	    	   	
+	}
